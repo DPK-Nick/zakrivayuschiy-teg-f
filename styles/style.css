@@ -38,8 +38,8 @@
   filter: sepia(90%);
 }
 
-.filter-blur {
-  filter: blur(10px);
+.filter-cont {
+  filter: contrast(200%);
 }
 
 @media (width < 376px) {

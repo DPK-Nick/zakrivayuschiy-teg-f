@@ -29,38 +29,6 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --headings-font-weight: 785;
-    --page-main-font-weight: 465;
-    --button-text-color: var(--color-green, #00cc14);
-    --text-color: var(--color-green, #00cc14);
-    --page-background-color: var(--color-black, #000000);
-    --page-background-image: repeating-linear-gradient(
-        to left,
-        #000000 0 2px,
-        #00000000 2px 4px
-      ),
-      repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
-      linear-gradient(to bottom, #007f0c, #004306);
-  }
-}
-
-:root.theme-dark {
-  --headings-font-weight: 785;
-  --page-main-font-weight: 465;
-  --button-text-color: var(--color-green, #00cc14);
-  --text-color: var(--color-green, #00cc14);
-  --page-background-color: var(--color-black, #000000);
-  --page-background-image: repeating-linear-gradient(
-      to left,
-      #000000 0 2px,
-      #00000000 2px 4px
-    ),
-    repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
-    linear-gradient(to bottom, #007f0c, #004306);
-}
-
 .filter-grayscale {
   filter: grayscale(70%);
 }
@@ -191,66 +159,8 @@
 }
 
 .header__subtitle {
+  padding-bottom: 128px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-}
-
-.header__theme-menu {
-  margin-block: 25px;
-}
-
-.theme-menu__list {
-  display: grid;
-  gap: 8px;
-  padding-inline-start: 20px;
-}
-
-.theme-menu__button {
-  position: relative;
-  border: none;
-  font-size: 14px;
-  text-transform: uppercase;
-  background: transparent;
-  transition: opacity 0.3s ease;
-  cursor: pointer;
-  appearance: none;
-}
-
-.theme-menu__button:not(:disabled)::after {
-  content: "";
-  display: block;
-  background: currentColor;
-  transition: transform 0.3s ease;
-  transform: scaleX(0);
-  transform-origin: left;
-  inline-size: 100%;
-  block-size: 2px;
-}
-
-.theme-menu__button:hover {
-  opacity: 0.6;
-}
-
-.theme-menu__button:focus {
-  outline: none;
-  opacity: 0.6;
-}
-
-.theme-menu__button:focus-visible::after {
-  transform: scaleX(1);
-}
-
-.theme-menu__button:disabled {
-  opacity: 0.6;
-  cursor: default;
-  pointer-events: none;
-}
-
-.theme-menu__button:disabled::before {
-  content: "▶";
-  position: absolute;
-  animation: arrow 0.5s ease-in-out infinite alternate;
-  inset-inline-start: -20px;
-  inset-block-start: 0px;
 }
 
 .main {

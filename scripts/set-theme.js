@@ -1,16 +1,3 @@
-function changeTheme(theme) {
-  document.documentElement.className = '';
-  document.documentElement.classList.add(`theme-${theme}`);
-  localStorage.setItem('theme', theme);
-}
-
-(function initTheme() {
-  const theme = localStorage.getItem('theme');
-  if (theme) {
-    changeTheme(theme);
-  }
-})();
-
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
   const themeButtons = document.querySelectorAll('.theme-menu__button');
@@ -40,3 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   });
 });
+
+function changeTheme(theme) {
+  document.documentElement.className = '';
+  document.documentElement.classList.add(`theme-${theme}`);
+  localStorage.setItem('theme', theme);
+}
+
+(function initTheme() {
+  const theme = localStorage.getItem('theme');
+  if (theme) {
+    changeTheme(theme);
+  }
+})();

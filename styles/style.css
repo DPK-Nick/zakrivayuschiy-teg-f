@@ -14,21 +14,6 @@
 
 */
 
-:root.theme-light {
-  --headings-font-weight: 700;
-  --page-main-font-weight: 400;
-  --button-text-color: var(--color-white, #fff);
-  --text-color: var(--color-black, #000000);
-  --page-background-color: var(--color-white, #ffffff);
-  --page-background-image: repeating-linear-gradient(
-      to left,
-      #d3d3d3 0 2px,
-      #d3d3d300 2px 4px
-    ),
-    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-}
-
 .filter-grayscale {
   filter: grayscale(70%);
 }
@@ -80,7 +65,6 @@
   .card__img-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--page-background-color, #ffffff);
-    text-stroke: 1px var(--page-background-color, #ffffff);
   }
 }
 

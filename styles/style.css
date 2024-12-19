@@ -71,7 +71,6 @@
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
-  padding-bottom: 100px;
   font-family: var(--main-font);
   font-variation-settings: "wght" var(--main-font-weight);
   background-color: var(--background-color);

@@ -101,8 +101,6 @@
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   line-height: normal;
   text-transform: uppercase;
-  width: 700px;
-  height: 368px;
 }
 
 @media screen and (max-width: 650px) {
@@ -117,7 +115,7 @@
 }
 
 .header__subtitle {
-  padding-bottom: 128px;
+  padding-bottom: 130px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 

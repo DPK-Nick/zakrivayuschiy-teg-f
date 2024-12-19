@@ -8,7 +8,25 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 */
 
-@keyframes arrow {
+@keyframes scaleHeart {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+
+@keyframes toggleSparks {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes TegArrow {
   from {
       transform: translate(0);
     }
@@ -16,24 +34,6 @@
       transform: translate(4px);
     }
   }
-
-@keyframes scaleHeart {
-  0% {
-    scale: 1;
-  }
-  100% {
-    scale: 1.5;
-  }
-}
-
-@keyframes toggleSparks {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .like-icon .core {
   fill: var(--page-background-color, #ffffff);

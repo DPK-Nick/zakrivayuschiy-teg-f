@@ -256,9 +256,7 @@
   .card__img-label {
     inset-inline-end: 13px;
   }
-}
 
-@media (width < 376px) {
   .modal {
     padding: 28px 34px 28px 40px;
     max-inline-size: 340px;
@@ -290,6 +288,10 @@
   .header {
     width: 375px;
   }
+}
+
+@media (width < 376px) {
+  
 }
 
 .card__img {

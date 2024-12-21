@@ -290,10 +290,6 @@
   }
 }
 
-@media (width < 376px) {
-  
-}
-
 .card__img {
   display: block;
   object-fit: cover;
